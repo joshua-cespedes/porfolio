@@ -273,3 +273,31 @@ body{
     color: #cbd5e1;
     margin: 0.5rem 0;
 }
+
+
+@media (max-width: 768px) {
+    /* Estilos para pantallas menores a 768px (tablets/móvil) */
+    
+    .navbar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .presentation {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .presentation img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+}
