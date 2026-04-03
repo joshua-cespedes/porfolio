@@ -276,28 +276,95 @@ body{
 
 
 @media (max-width: 768px) {
-    /* Estilos para pantallas menores a 768px (tablets/móvil) */
-    
-    .navbar {
-        flex-direction: column;
-        padding: 1rem;
+    body {
+        padding-top: 80px;
     }
-    
+
+    .navbar {
+        padding: 0.75rem;
+    }
+
+    .navbar .left h2 {
+        font-size: 1rem;
+    }
+
+    .navbar .center ul {
+        gap: 1rem;
+    }
+
+    .navbar .center a {
+        font-size: 0.85rem;
+    }
+
+    .navbar .right {
+        display: none;
+    }
+
     .presentation {
         flex-direction: column;
         padding: 1rem;
+        padding-top: 2rem;
     }
-    
+
     .presentation img {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
-    
+
+    .presentation-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .presentation-description {
+        font-size: 0.95rem;
+    }
+
+    .presentation-links {
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .presentation-links a {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
     .projects-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .tech-grid {
         grid-template-columns: 1fr;
+    }
+
+    .project-card h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .center ul {
+        gap: 0.5rem;
+    }
+
+    .navbar .center a {
+        font-size: 0.75rem;
+    }
+
+    .presentation-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .presentation-links a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .projects h2 {
+        font-size: 1.5rem;
+    }
+
+    .skills h2 {
+        font-size: 1.5rem;
     }
 }
