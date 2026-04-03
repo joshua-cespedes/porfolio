@@ -88,3 +88,63 @@ body{
     transform: translate(-2px);
 }
 
+
+/*Presentation*/
+
+.presentation{
+    min-height: 100vh;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.presentation-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.presentation-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.presentation img{
+    width: 300PX;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 150%;
+}
+
+.presentation-description {
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.presentation-links{
+    margin-top: 50px;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+}
+
+.presentation-links a {
+    color: #06b6d4;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #06b6d4;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.presentation-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
