@@ -216,3 +216,59 @@ body{
     border: 1px solid rgba(6, 182, 212, 0.3);
 }
 
+/*Tecnologías*/
+
+.skills{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.tech-grid {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+
+}
+
+.tech-card {
+    border: 1px solid #06b6d4;
+    padding: 2rem;
+    border-radius: 12px;
+    background: rgba(6, 182, 212, 0.05);
+}
+
+.tech-card h3 {
+    color: #06b6d4;
+    margin-bottom: 1rem;
+}
+
+.tech-card ul {
+    list-style: none;
+}
+
+.tech-card li {
+    color: #cbd5e1;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(6, 182, 212, 0.1);
+}
+
+.languages {
+    border: 1px solid #06b6d4;
+    padding: 2rem;
+    border-radius: 12px;
+    background: rgba(6, 182, 212, 0.05);
+    text-align: center;
+}
+
+.languages h2 {
+    color: #06b6d4;
+    margin-bottom: 1rem;
+}
+
+.languages p {
+    color: #cbd5e1;
+    margin: 0.5rem 0;
+}
