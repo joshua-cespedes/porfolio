@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Joshua Céspedes</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar"></nav>
+    </header>
+
+    <section id="certificates" class="certificates">
+        <h2>Certificados</h2>
+        <div class="certificates-grid">
+            <article class="certificates-card">
+                <h3>Introducción a ciberseguridad</h3>
+                <img class="certificate-image" src="assets/images/I2CS__1_.png" alt="ciberseguridad cisco">
+                <p>Cisco</p>
+                <p class="certificates-date">2026</p>
+                <a href="https://www.credly.com/badges/70e79260-d902-4078-82f5-c239b62fa0ab/linked_in?t=tcukwn"
+                target="_blank" rel="noopener noreferrer">
+                Ver certificado</a>
+            </article>
+        </div>
+
+    </section>
+</body>
+
+<script>
+    fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+    })
+</script>
+
+</html>
