@@ -13,28 +13,7 @@
 
 <body>
     <header>
-        <nav class="navbar">
-            <section class="left">
-                <h2>Joshua Céspedes</h2>
-            </section>
-
-            <section class="center">
-                <ul>
-                    <li><a href="#projects">Proyectos</a></li>
-                    <li><a href="#certificates">Certificados</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                </ul>
-            </section>
-
-            <section class="right">
-                <ul>
-                    <li><a href="https://github.com/joshua-cespedes" target="_blank"
-                            rel="noopener noreferrer">Github</a></li>
-                    <li><a href="https://www.linkedin.com/in/joshua-cespedes" target="_blank"
-                            rel="noopener noreferrer">Linkedin</a></li>
-                </ul>
-            </section>
-
+        <nav id="navbar">
         </nav>
     </header>
 
@@ -70,7 +49,7 @@
     </section>
 
     <section id="projects" class="projects">
-        <h2>Proyectos académicos</h2>
+        <h2>Proyectos académicos y personales</h2>
         <div class="projects-grid">
 
             <article class="project-card">
@@ -78,6 +57,11 @@
                 <p>Sistema de gestión interna para un hogar de ancianos, enfocado en la administración de inventario,
                     empleados, residentes y control de visitas. Permite organizar y gestionar la información de forma
                     eficiente mediante operaciones CRUD y una estructura de datos clara.</p>
+
+                <p> <strong>Rol</strong>: Desarrollor full stack</p>
+
+                <a href="https://github.com/joshua-cespedes/longevus" target="_blank" rel="noopener noreferrer">Github</a>
+
                 <div class="project-techs">
                     <span class="tech">Spring Boot</span>
                     <span class="tech">React</span>
@@ -86,13 +70,18 @@
             </article>
 
             <article class="project-card">
-                <h3>Página Amarilla</h3>
-                <p>Aplicación web tipo directorio que permite registrar, buscar y explorar negocios. Incluye
-                    funcionalidades dinámicas de búsqueda y gestión de datos, ofreciendo una experiencia rápida e
-                    intuitiva para el usuario.</p>
+                <h3>Taller Ruta 10</h3>
+                <p>Sistema de gestión interno para un taller de vehículos, enfocado en la administración de productos,
+                    servicios, empleados, clientes y sobre todo en el proceso de agendar y guardar citas.</p>
+
+                <p> <strong>Rol</strong>: Desarrollor full stack</p>
+
+                <a href="https://github.com/joshua-cespedes/taller-ruta-10" target="_blank" rel="noopener noreferrer">Github</a>
+                
                 <div class="project-techs">
-                    <span class="tech">Next.js (Full Stack)</span>
-                    <span class="tech">PostgreSQL</span>
+                    <span class="tech">.NET</span>
+                    <span class="tech">React</span>
+                    <span class="tech">SQLServer</span>
                 </div>
             </article>
 
@@ -111,7 +100,9 @@
                 <img class="certificate-image" src="assets/images/I2CS__1_.png" alt="ciberseguridad cisco">
                 <p>Cisco</p>
                 <p class="certificates-date">2026</p>
-                <a href="https://www.credly.com/badges/70e79260-d902-4078-82f5-c239b62fa0ab/linked_in?t=tcukwn">Ver certificado</a>
+                <a href="https://www.credly.com/badges/70e79260-d902-4078-82f5-c239b62fa0ab/linked_in?t=tcukwn"
+                target="_blank" rel="noopener noreferrer">
+                Ver certificado</a>
             </article>
         </div>
 
@@ -170,5 +161,13 @@
     </section>
 
 </body>
+
+<script>
+    fetch("navbar.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+        });
+</script>
 
 </html>

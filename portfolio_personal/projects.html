@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Joshua Céspedes</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar"></nav>
+    </header>
+
+    <section id="projects" class="projects">
+        <h2>Proyectos académicos y personales</h2>
+        <div class="projects-grid">
+
+            <article class="project-card">
+                <h3>Longevus</h3>
+                <p>Sistema de gestión interna para un hogar de ancianos, enfocado en la administración de inventario,
+                    empleados, residentes y control de visitas. Permite organizar y gestionar la información de forma
+                    eficiente mediante operaciones CRUD y una estructura de datos clara.</p>
+
+                <p> <strong>Rol</strong>: Desarrollor full stack</p>
+
+                <a href="https://github.com/joshua-cespedes/longevus" target="_blank" rel="noopener noreferrer"> Ver en Github</a>
+
+                <div class="project-techs">
+                    <span class="tech">Spring Boot</span>
+                    <span class="tech">React</span>
+                    <span class="tech">MySQL</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <h3>Taller Ruta 10</h3>
+                <p>Sistema de gestión interno para un taller de vehículos, enfocado en la administración de productos,
+                    servicios, empleados, clientes y sobre todo en el proceso de agendar y guardar citas.</p>
+
+                <p> <strong>Rol</strong>: Desarrollor full stack</p>
+
+                <a href="https://github.com/joshua-cespedes/taller-ruta-10" target="_blank" rel="noopener noreferrer">Ver en Github</a>
+                
+                <div class="project-techs">
+                    <span class="tech">.NET</span>
+                    <span class="tech">React</span>
+                    <span class="tech">SQLServer</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <h3>Página Amarilla</h3>
+                <p>Aplicación web tipo directorio que permite registrar, buscar y explorar negocios. Incluye
+                    funcionalidades dinámicas de búsqueda y gestión de datos, ofreciendo una experiencia rápida e
+                    intuitiva para el usuario.</p>
+
+                <p> <strong>Rol</strong>: Desarrollor backend</p>
+                    
+                <div class="project-techs">
+                    <span class="tech">Next.js (Full Stack)</span>
+                    <span class="tech">PostgreSQL</span>
+                </div>
+            </article>
+
+
+        </div>
+</body>
+
+<script>
+    fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+    })
+</script>
+
+</html>
